@@ -26,6 +26,7 @@ namespace SampleMVCApp
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            //API時にはここを変更
             services.AddControllersWithViews();
 
             services.AddDbContext<SampleMVCAppContext>(options =>
