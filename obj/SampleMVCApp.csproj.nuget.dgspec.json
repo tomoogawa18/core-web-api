@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/ogawatomohiro/Desktop/SampleMVCApp 2/SampleMVCApp.csproj": {}
+    "/Users/ogawatomohiro/Desktop/WebApi/SampleMVCApp.csproj": {}
   },
   "projects": {
-    "/Users/ogawatomohiro/Desktop/SampleMVCApp 2/SampleMVCApp.csproj": {
+    "/Users/ogawatomohiro/Desktop/WebApi/SampleMVCApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/ogawatomohiro/Desktop/SampleMVCApp 2/SampleMVCApp.csproj",
+        "projectUniqueName": "/Users/ogawatomohiro/Desktop/WebApi/SampleMVCApp.csproj",
         "projectName": "SampleMVCApp",
-        "projectPath": "/Users/ogawatomohiro/Desktop/SampleMVCApp 2/SampleMVCApp.csproj",
+        "projectPath": "/Users/ogawatomohiro/Desktop/WebApi/SampleMVCApp.csproj",
         "packagesPath": "/Users/ogawatomohiro/.nuget/packages/",
-        "outputPath": "/Users/ogawatomohiro/Desktop/SampleMVCApp 2/obj/",
+        "outputPath": "/Users/ogawatomohiro/Desktop/WebApi/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/ogawatomohiro/.nuget/NuGet/NuGet.Config"

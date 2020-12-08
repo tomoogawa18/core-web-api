@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "xUCtHKvhLtOiCmN9OdD/fOpoogUCsSW1CZelqeIirTi2PyTBcp9tC7xyRlSznyYPiMWOAvltBPUyG4PXR1+P9w==",
+  "dgSpecHash": "rc2ERyyH4O45K7zycEnZi0JVMiepLhpFMv3WLVZ9bGGCR3drxvktQlHuUuMnzjDqtOtIfd5cgxWLcNHHbnHnig==",
   "success": true,
-  "projectFilePath": "/Users/ogawatomohiro/Desktop/SampleMVCApp 2/SampleMVCApp.csproj",
+  "projectFilePath": "/Users/ogawatomohiro/Desktop/WebApi/SampleMVCApp.csproj",
   "expectedPackageFiles": [
     "/Users/ogawatomohiro/.nuget/packages/bouncycastle.netcore/1.8.3/bouncycastle.netcore.1.8.3.nupkg.sha512",
     "/Users/ogawatomohiro/.nuget/packages/google.protobuf/3.11.4/google.protobuf.3.11.4.nupkg.sha512",
