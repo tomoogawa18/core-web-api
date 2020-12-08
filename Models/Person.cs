@@ -12,5 +12,7 @@ namespace SampleMVCApp.Models
         public string Name { get; set; }
         public string Mail { get; set; }
         public int Age { get; set; }
+
+        public ICollection<Post> Posts { get; set; }
     }
 }
