@@ -13,4 +13,5 @@ using SampleMVCApp.Models;
         }
 
         public DbSet<SampleMVCApp.Models.Person> Person { get; set; }
+        public DbSet<SampleMVCApp.Models.Post> Post { get; set; }
     }
