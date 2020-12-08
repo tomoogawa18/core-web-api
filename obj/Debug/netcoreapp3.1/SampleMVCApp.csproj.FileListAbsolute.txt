@@ -480,3 +480,4 @@
 /Users/ogawatomohiro/Desktop/WebApi/obj/Debug/netcoreapp3.1/Razor/Views/Posts/Details.cshtml.g.cs
 /Users/ogawatomohiro/Desktop/WebApi/obj/Debug/netcoreapp3.1/Razor/Views/Posts/Edit.cshtml.g.cs
 /Users/ogawatomohiro/Desktop/WebApi/obj/Debug/netcoreapp3.1/Razor/Views/Posts/Delete.cshtml.g.cs
+/Users/ogawatomohiro/Desktop/WebApi/obj/Debug/netcoreapp3.1/Razor/Views/People/Find.cshtml.g.cs

@@ -14437,6 +14437,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "/Users/ogawatomohiro/Desktop/WebApi/Views/People/Find.cshtml",
+      "TargetPath": "Views\\People\\Find.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "/Users/ogawatomohiro/Desktop/WebApi/Views/Shared/Error.cshtml",
       "TargetPath": "Views\\Shared\\Error.cshtml",
       "FileKind": "mvc"

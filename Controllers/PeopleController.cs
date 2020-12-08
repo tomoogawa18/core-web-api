@@ -148,5 +148,20 @@ namespace SampleMVCApp.Controllers
         {
             return _context.Person.Any(e => e.PersonId == id);
         }
+
+        public async Task<IActionResult> Find()
+        {
+            return View(await _context.Person.ToListAsync());
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Find(string find)
+        {
+            var People = await _context.Person.Where(m => m.Name.Contains(find) || m.Mail.Contains(find))
+                .ToListAsync();
+
+            return View(People);
+        }
     }
 }

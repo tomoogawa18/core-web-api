@@ -58,7 +58,7 @@ namespace SampleMVCApp
             {
                 endpoints.MapControllerRoute(
                     name: "default",
-                    pattern: "{controller=Posts}/{action=Index}/{id?}");
+                    pattern: "{controller=People}/{action=Index}/{id?}");
             });
         }
     }
