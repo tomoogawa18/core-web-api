@@ -9,7 +9,9 @@ using SampleMVCApp.Models;
 
 namespace SampleMVCApp.Controllers
 {
-    public class PostsController : Controller
+    [Route("api/[controller]")]
+    [ApiController]
+    public class PostsController : ControllerBase
     {
         private readonly SampleMVCAppContext _context;
 
@@ -18,130 +20,91 @@ namespace SampleMVCApp.Controllers
             _context = context;
         }
 
-        // GET: People
+        // GET: api/Posts
         
-        public async Task<IActionResult> Index()
+        public async Task<ActionResult<IEnumerable<Post>>> GetPost()
         {
-            return View(await _context.Post.ToListAsync());
+            return await _context.Post.ToListAsync();
         }
         
-        // GET: People/Create
-        public IActionResult Create()
+        // GET: api/Posts/5
+        [HttpGet("{id}")]
+        public async Task<ActionResult<Post>> GetPost(int id)
         {
-            return View();
-        }
+            var post = await _context.Post.FindAsync(id);
 
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("PostId, Subject, Content")] Post post)
-        {
-            if(ModelState.IsValid){
-                _context.Add(post);
-                await _context.SaveChangesAsync();   
-                return RedirectToAction(nameof(Index)); 
-            }
-
-            return View(post);
-        }
-
-        public async Task<IActionResult> Details(int? id)
-        {
-            if(id == null){
-                return NotFound();
-            }
-
-            var post = await _context.Post
-                .FirstOrDefaultAsync(m => m.PostId == id);
-
-            if(post == null){
-                return NotFound();
-            }
-
-            return View(post);
-        }
-
-        public async Task<IActionResult> Edit(int? id){
-
-            if (id == null)
-            {
-                return NotFound();
-            }
-
-            var person = await _context.Post.FindAsync(id);
-
-            if (person == null)
-            {
-                return NotFound();
-            }
-
-            return View(person);
-        }
-
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("PostId, Subject, Content")] Post post)
-        {
-            if(id != post.PostId)
-            {
-                return NotFound();
-            }
-
-            if(ModelState.IsValid)
-            {
-                try{
-                    _context.Update(post);
-                    await _context.SaveChangesAsync();
-
-                }catch(DbUpdateConcurrencyException){
-                    if(!PostExists(post.PostId))
-                    {
-                        return NotFound();
-                    }
-                    else
-                    {
-                        throw;
-                    }
-                }
-
-                return RedirectToAction(nameof(Index));
-            }
-
-            return View(post);
-        }
-
-        private bool PostExists(int id)
-        {
-            return _context.Post.Any(e => e.PostId == id);
-        }
-
-        public async Task<IActionResult> Delete(int? id)
-        {
-            if (id == null)
-            {
-                return NotFound();
-            }
-
-            var post = await _context.Post
-                .FirstOrDefaultAsync(m => m.PostId == id);
             if (post == null)
             {
                 return NotFound();
             }
 
-            return View(post);
+            return post;
         }
 
-        [HttpPost, ActionName("Delete")]
-        [ValidateAntiForgeryToken]
-        public async Task<IActionResult> DeleteConfirmed(int id)
+        // PUT: api/Posts/5
+        // To protect from overposting attacks, enable the specific properties you want to bind to, for
+        // more details, see https://go.microsoft.com/fwlink/?linkid=2123754.
+        [HttpPut("{id}")]
+        public async Task<IActionResult> PutProduct(int id, Post post)
+        {
+            if (id != post.PostId)
+            {
+                return BadRequest();
+            }
+
+            _context.Entry(post).State = EntityState.Modified;
+
+            try
+            {
+                await _context.SaveChangesAsync();
+            }
+            catch (DbUpdateConcurrencyException)
+            {
+                if (!PostExists(id))
+                {
+                    return NotFound();
+                }
+                else
+                {
+                    throw;
+                }
+            }
+
+            return NoContent();
+        }
+
+
+        // POST: api/Products
+        // To protect from overposting attacks, enable the specific properties you want to bind to, for
+        // more details, see https://go.microsoft.com/fwlink/?linkid=2123754.
+        [HttpPost]
+        public async Task<ActionResult<Post>> PostProduct(Post post)
+        {
+            _context.Post.Add(post);
+            await _context.SaveChangesAsync();
+
+            return CreatedAtAction("GetProduct", new { id = post.PostId }, post);
+        }
+
+        // DELETE: api/Products/5
+        [HttpDelete("{id}")]
+        public async Task<ActionResult<Post>> DeleteProduct(int id)
         {
             var post = await _context.Post.FindAsync(id);
+            if (post == null)
+            {
+                return NotFound();
+            }
+
             _context.Post.Remove(post);
-
             await _context.SaveChangesAsync();
-            
-            return RedirectToAction(nameof(Index));
 
+            return post;
+        }
+
+        private bool PostExists(int id)
+        {
+            return _context.Post.Any(e => e.PostId == id);
         }
     }
 }

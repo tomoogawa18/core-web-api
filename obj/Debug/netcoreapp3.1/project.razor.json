@@ -14417,26 +14417,6 @@
       "FileKind": "mvc"
     },
     {
-      "FilePath": "/Users/ogawatomohiro/Desktop/WebApi/Views/People/Delete.cshtml",
-      "TargetPath": "Views\\People\\Delete.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "/Users/ogawatomohiro/Desktop/WebApi/Views/People/Index.cshtml",
-      "TargetPath": "Views\\People\\Index.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "/Users/ogawatomohiro/Desktop/WebApi/Views/People/Create.cshtml",
-      "TargetPath": "Views\\People\\Create.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "/Users/ogawatomohiro/Desktop/WebApi/Views/People/Find.cshtml",
-      "TargetPath": "Views\\People\\Find.cshtml",
-      "FileKind": "mvc"
-    },
-    {
       "FilePath": "/Users/ogawatomohiro/Desktop/WebApi/Views/Shared/Error.cshtml",
       "TargetPath": "Views\\Shared\\Error.cshtml",
       "FileKind": "mvc"
@@ -14454,16 +14434,6 @@
     {
       "FilePath": "/Users/ogawatomohiro/Desktop/WebApi/Views/Posts/Details.cshtml",
       "TargetPath": "Views\\Posts\\Details.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "/Users/ogawatomohiro/Desktop/WebApi/Views/People/Details.cshtml",
-      "TargetPath": "Views\\People\\Details.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "/Users/ogawatomohiro/Desktop/WebApi/Views/People/Edit.cshtml",
-      "TargetPath": "Views\\People\\Edit.cshtml",
       "FileKind": "mvc"
     },
     {

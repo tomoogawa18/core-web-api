@@ -136,12 +136,6 @@
 /Users/ogawatomohiro/Desktop/WebApi/obj/Debug/netcoreapp3.1/SampleMVCApp.TagHelpers.input.cache
 /Users/ogawatomohiro/Desktop/WebApi/obj/Debug/netcoreapp3.1/SampleMVCApp.TagHelpers.output.cache
 /Users/ogawatomohiro/Desktop/WebApi/obj/Debug/netcoreapp3.1/SampleMVCApp.RazorCoreGenerate.cache
-/Users/ogawatomohiro/Desktop/WebApi/obj/Debug/netcoreapp3.1/Razor/Views/People/Create.cshtml.g.cs
-/Users/ogawatomohiro/Desktop/WebApi/obj/Debug/netcoreapp3.1/Razor/Views/People/Delete.cshtml.g.cs
-/Users/ogawatomohiro/Desktop/WebApi/obj/Debug/netcoreapp3.1/Razor/Views/People/Details.cshtml.g.cs
-/Users/ogawatomohiro/Desktop/WebApi/obj/Debug/netcoreapp3.1/Razor/Views/People/Edit.cshtml.g.cs
-/Users/ogawatomohiro/Desktop/WebApi/obj/Debug/netcoreapp3.1/Razor/Views/People/Find.cshtml.g.cs
-/Users/ogawatomohiro/Desktop/WebApi/obj/Debug/netcoreapp3.1/Razor/Views/People/Index.cshtml.g.cs
 /Users/ogawatomohiro/Desktop/WebApi/obj/Debug/netcoreapp3.1/Razor/Views/Posts/Create.cshtml.g.cs
 /Users/ogawatomohiro/Desktop/WebApi/obj/Debug/netcoreapp3.1/Razor/Views/Posts/Delete.cshtml.g.cs
 /Users/ogawatomohiro/Desktop/WebApi/obj/Debug/netcoreapp3.1/Razor/Views/Posts/Details.cshtml.g.cs
