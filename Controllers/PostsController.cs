@@ -45,7 +45,7 @@ namespace SampleMVCApp.Controllers
         // To protect from overposting attacks, enable the specific properties you want to bind to, for
         // more details, see https://go.microsoft.com/fwlink/?linkid=2123754.
         [HttpPut("{id}")]
-        public async Task<IActionResult> PutProduct(int id, Post post)
+        public async Task<IActionResult> PutPost(int id, Post post)
         {
             if (id != post.PostId)
             {
@@ -78,7 +78,7 @@ namespace SampleMVCApp.Controllers
         // To protect from overposting attacks, enable the specific properties you want to bind to, for
         // more details, see https://go.microsoft.com/fwlink/?linkid=2123754.
         [HttpPost]
-        public async Task<ActionResult<Post>> PostProduct(Post post)
+        public async Task<ActionResult<Post>> PostPost(Post post)
         {
             _context.Post.Add(post);
             await _context.SaveChangesAsync();
@@ -88,7 +88,7 @@ namespace SampleMVCApp.Controllers
 
         // DELETE: api/Products/5
         [HttpDelete("{id}")]
-        public async Task<ActionResult<Post>> DeleteProduct(int id)
+        public async Task<ActionResult<Post>> DeletePost(int id)
         {
             var post = await _context.Post.FindAsync(id);
             if (post == null)

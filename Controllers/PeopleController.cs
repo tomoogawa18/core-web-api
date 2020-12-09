@@ -50,7 +50,7 @@ namespace SampleMVCApp.Controllers
         // To protect from overposting attacks, enable the specific properties you want to bind to, for
         // more details, see https://go.microsoft.com/fwlink/?linkid=2123754.
         [HttpPut("{id}")]
-        public async Task<IActionResult> PutProduct(int id, Person person)
+        public async Task<IActionResult> PutPerson(int id, Person person)
         {
             if (id != person.PersonId)
             {
@@ -83,7 +83,7 @@ namespace SampleMVCApp.Controllers
         // To protect from overposting attacks, enable the specific properties you want to bind to, for
         // more details, see https://go.microsoft.com/fwlink/?linkid=2123754.
         [HttpPost]
-        public async Task<ActionResult<Person>> PostProduct(Person person)
+        public async Task<ActionResult<Person>> PostPerson(Person person)
         {
             _context.Person.Add(person);
             await _context.SaveChangesAsync();
@@ -93,7 +93,7 @@ namespace SampleMVCApp.Controllers
 
         // DELETE: api/Products/5
         [HttpDelete("{id}")]
-        public async Task<ActionResult<Person>> DeleteProduct(int id)
+        public async Task<ActionResult<Person>> DeletePerson(int id)
         {
             var product = await _context.Person.FindAsync(id);
             if (product == null)
@@ -112,14 +112,13 @@ namespace SampleMVCApp.Controllers
             return _context.Person.Any(e => e.PersonId == id);
         }
 
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public async Task<ActionResult<IEnumerable<Person>>> Find(string find)
-        {
-            var People = await _context.Person.Where(m => m.Name.Contains(find) || m.Mail.Contains(find))
-                .ToListAsync();
+        // [HttpGet]
+        // public async Task<ActionResult<IEnumerable<Person>>> Find([FromQuery(Name = "find")] string find)
+        // {
+        //     var People = await _context.Person.Where(m => m.Name.Contains(find) || m.Mail.Contains(find))
+        //         .ToListAsync();
 
-            return People;
-        }
+        //     return People;
+        // }
     }
 }
