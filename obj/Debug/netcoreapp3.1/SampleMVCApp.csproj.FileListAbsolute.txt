@@ -137,3 +137,14 @@
 /Users/ogawatomohiro/Desktop/WebApi/obj/Debug/netcoreapp3.1/SampleMVCApp.dll
 /Users/ogawatomohiro/Desktop/WebApi/obj/Debug/netcoreapp3.1/SampleMVCApp.pdb
 /Users/ogawatomohiro/Desktop/WebApi/obj/Debug/netcoreapp3.1/SampleMVCApp.genruntimeconfig.cache
+/Users/ogawatomohiro/Desktop/WebApi/bin/Debug/netcoreapp3.1/libman.json
+/Users/ogawatomohiro/Desktop/WebApi/bin/Debug/netcoreapp3.1/Microsoft.AspNetCore.NodeServices.dll
+/Users/ogawatomohiro/Desktop/WebApi/bin/Debug/netcoreapp3.1/Microsoft.AspNetCore.SpaServices.dll
+/Users/ogawatomohiro/Desktop/WebApi/bin/Debug/netcoreapp3.1/Microsoft.AspNetCore.SpaServices.Extensions.dll
+/Users/ogawatomohiro/Desktop/WebApi/bin/Debug/netcoreapp3.1/Microsoft.Extensions.FileProviders.Abstractions.dll
+/Users/ogawatomohiro/Desktop/WebApi/bin/Debug/netcoreapp3.1/Microsoft.Extensions.FileProviders.Physical.dll
+/Users/ogawatomohiro/Desktop/WebApi/bin/Debug/netcoreapp3.1/Microsoft.Extensions.FileSystemGlobbing.dll
+/Users/ogawatomohiro/Desktop/WebApi/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Logging.Configuration.dll
+/Users/ogawatomohiro/Desktop/WebApi/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Logging.Console.dll
+/Users/ogawatomohiro/Desktop/WebApi/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Options.ConfigurationExtensions.dll
+/Users/ogawatomohiro/Desktop/WebApi/obj/Debug/netcoreapp3.1/SampleMVCApp.MvcApplicationPartsAssemblyInfo.cs
